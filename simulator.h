@@ -12,7 +12,6 @@ struct Transmissions
 
 class Simulator {
 public:
-    //static int constexpr ONE_YEAR_TRADING_DAYS = 252;
     Simulator(int numberNodes=0, std::shared_ptr<BackoffStrategy> backoffStrategy = nullptr, int minPacketSize=0, int maxPacketSize=0, int simulationTime=0, int numSimulations=0);
     Transmissions simulateCSMACA(int numberNodes, std::shared_ptr<BackoffStrategy> backoffStrategy, int minPacketSize, int maxPacketSize, int simulationTime, int simulations) const;
 
